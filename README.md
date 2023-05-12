@@ -15,11 +15,11 @@ HGNN is a novel hierical molecular representation learning framework, consisting
 
 Setup the required environment using `hmpnn.yaml` with Anaconda. While in the project directory run:
 
-    conda env create -f hmpnn.yaml
+    conda env create -f hgnn.yaml
 
 Activate the environment
 
-    conda activate hmpnn
+    conda activate hgnn
 ## Training
 To train a model from scratch, run:
 
