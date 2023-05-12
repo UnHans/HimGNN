@@ -28,8 +28,6 @@ To train a model from scratch, run:
 To train a model with optimized hyperparameters, run:
 ```linux
 cd scripts
-```
-```linux
 bash <datasetname>.sh
 ```
 
