@@ -20,7 +20,7 @@ Setup the required environment using `hmpnn.yaml` with Anaconda. While in the pr
 Activate the environment
 
     conda activate hgnn
-## Training
+## Training and Evaluation
 To train a model from scratch, run:
 
 `python train_evaluate.py --dataset <datasetname> --num_folds 10 --device cuda:0 --epoch 150`
