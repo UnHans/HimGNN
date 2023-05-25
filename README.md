@@ -37,12 +37,12 @@ Extensive experiments demonstrate that our HMPNN model obtains comparable perfor
 
 Model      | BBBP | SIDER | ClinTox | BACE | Tox21 
 ----       | ---|----       |----       |----        |----            
-HMPNN|  0.928(0.027) | 0.642(0.023) | 0.917(0.030) | 0.856(0.034) | 0.807(0.017) 
+HGNN|  0.928(0.027) | 0.642(0.023) | 0.917(0.030) | 0.856(0.034) | 0.807(0.017) 
 
 - The regression datasets.
 
 Model | FreeSolv | ESOL | Lipo 
 ----- | ---- | ---- | ---- 
-HMPNN  | 1.921(0.474) | 0.870(0.154) |  0.632(0.016) 
+HGNN  | 1.921(0.474) | 0.870(0.154) |  0.632(0.016) 
 
 We used a 10-folds validation with scaffold splitting, and reported the mean and standard deviation of AUC or RMSE values. For methodology and random-split results, please refer to the paper for more details.
