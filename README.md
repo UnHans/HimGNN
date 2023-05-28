@@ -13,7 +13,7 @@ HGNN is a novel hierical molecular representation learning framework, consisting
 + RDKit
 + torch >= 1.10.0
 
-Setup the required environment using `hmpnn.yaml` with Anaconda. While in the project directory run:
+Setup the required environment using `hgnn.yaml` with Anaconda. While in the project directory run:
 
     conda env create -f hgnn.yaml
 
