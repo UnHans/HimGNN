@@ -1,1 +1,1 @@
-python ../train_evaluate.py --dataset 'BACE' --epoch 200 --batch_size 200 --drop_rate 0.4 --dist 0.01 --hid_dim 96 --attention True --step 4 --agg_op mean  --mol_FP ss --learning_rate 0.0005 --folds 10 --device cuda:0 --heads 4
+python ../train_evaluate.py --dataset 'BACE' --epoch 200 --batch_size 200 --drop_rate 0.4 --dist 0.01 --hid_dim 96 --attention True --step 4 --agg_op mean --learning_rate 0.0005 --folds 10 --device cuda:0 --heads 4
