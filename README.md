@@ -1,7 +1,7 @@
 # HGNN
-This is a Pytorch implementation of the paper:"HGNN:a novel hierarchical molecular  representations learning framework for property prediction"
+This is a Pytorch implementation of the paper:"HimGNN:a novel hierarchical molecular graph representations learning framework for property prediction"
 ## Overview of the Framework.
-HGNN is a novel hierical molecular representation learning framework, consisting of Atom-MPNN and Motif-MPNN and adopts a local augmentation strategy to improve the performance of the downstream molecular property prediction tasks. Specifically, we perform MPNNs on the constructed motif-based graphs to capture the coarse grained structural information of molecules as a complement to fine-grained atom embeddings, and the message communication between atoms and motifs is enriched by introducing a novel Transformer-based local augmentation module.Additionally, we point out that current multi-representation learning methods may cause the weight difference issue and propose a simple yet effective rescaling module to extract interdependencies between hierarchical molecular representations.
+HimGNN is a novel hierical molecular representation learning framework, consisting of Atom-MPNN and Motif-MPNN and adopts a local augmentation strategy to improve the performance of the downstream molecular property prediction tasks. Specifically, we perform MPNNs on the constructed motif-based graphs to capture the coarse grained structural information of molecules as a complement to fine-grained atom embeddings, and the message communication between atoms and motifs is enriched by introducing a novel Transformer-based local augmentation module.Additionally, we point out that current multi-representation learning methods may cause the weight difference issue and propose a simple yet effective rescaling module to extract interdependencies between hierarchical molecular representations.
 
 <p align="center">
 <img  src="figures/HGNN.png"> 
@@ -13,9 +13,9 @@ HGNN is a novel hierical molecular representation learning framework, consisting
 + RDKit
 + torch >= 1.10.0
 
-Setup the required environment using `hgnn.yaml` with Anaconda. While in the project directory run:
+Setup the required environment using `himgnn.yaml` with Anaconda. While in the project directory run:
 
-    conda env create -f hgnn.yaml
+    conda env create -f himgnn.yaml
 
 Activate the environment
 
@@ -32,7 +32,7 @@ bash <datasetname>.sh
 ```
 
 ## The Prediction Results
-Extensive experiments demonstrate that our HMPNN model obtains comparable performances against state-of-the-art baselines on 8 molecular property datasets.
+Extensive experiments demonstrate that our HimGNN model obtains comparable performances against state-of-the-art baselines on 8 molecular property datasets.
 - The classification datasets.
 
 Model      | BBBP | SIDER | ClinTox | BACE | Tox21 
