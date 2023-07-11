@@ -19,7 +19,7 @@ Setup the required environment using `himgnn.yaml` with Anaconda. While in the p
 
 Activate the environment
 
-    conda activate hgnn
+    conda activate himgnn
 ## Training and Evaluation
 To train a model from scratch, run:
 
