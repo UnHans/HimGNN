@@ -17,10 +17,8 @@ class ContextualRescale(nn.Module):
                              1,
                              dropout_prob=0.0,
                              num_neurons=[],input_norm=args.input_norm)
-        self.modeling= MLP(2,
-                           2,
-                           dropout_prob=0.0,
-                           num_neurons=[64],input_norm=args.input_norm)
+        self.W1=nn.Linear(2,64)
+        self.W2=nn.Linear(64,2)
         if(args.gating_func=='Sigmoid'):
             self.GatingFunc=torch.sigmoid
         elif(args.gating_func=='Softmax'):
@@ -31,7 +29,8 @@ class ContextualRescale(nn.Module):
         atom_squeeze=self.atom_scale(atom_representation)
         motif_squeeze=self.fg_scale(motif_representation)
         joint_squeeze=torch.cat([atom_squeeze,motif_squeeze],dim=1)
-        weights=self.modeling(joint_squeeze)
+        weights=self.W1(joint_squeeze)
+        weights=self.W2(weights)
         weights=torch.sigmoid(weights)
         atom_scale_value=torch.reshape(weights[:,0],(atom_representation.shape[0],1))
         motif_scale_value=torch.reshape(weights[:,1],(motif_representation.shape[0],1))  
