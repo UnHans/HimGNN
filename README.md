@@ -1,4 +1,4 @@
-# HGNN
+# HimGNN
 This is a Pytorch implementation of the paper:"HimGNN:a novel hierarchical molecular graph representations learning framework for property prediction"
 ## Overview of the Framework.
 HimGNN is a novel hierical molecular representation learning framework, consisting of Atom-MPNN and Motif-MPNN and adopts a local augmentation strategy to improve the performance of the downstream molecular property prediction tasks. Specifically, we perform MPNNs on the constructed motif-based graphs to capture the coarse grained structural information of molecules as a complement to fine-grained atom embeddings, and the message communication between atoms and motifs is enriched by introducing a novel Transformer-based local augmentation module.Additionally, we point out that current multi-representation learning methods may cause the weight difference issue and propose a simple yet effective rescaling module to extract interdependencies between hierarchical molecular representations.
