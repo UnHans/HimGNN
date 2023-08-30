@@ -219,7 +219,7 @@ if __name__ == '__main__':
     p.add_argument('--attention',type=bool,default=True,help='whether to use global attention pooling')
     p.add_argument('--step',type=int,default=4,help='message passing steps')
     p.add_argument('--agg_op',type=str,choices=['max','mean','sum'],default='mean',help='aggregations in local augmentation')
-    p.add_argument('--mol_FP',type=str,choices=['atom','ss','both','none'],default='ss',help='cat mol FingerPrint to SS or Atom representation'
+    p.add_argument('--mol_FP',type=str,choices=['atom','ss','both','none'],default='ss',help='cat mol FingerPrint to Motif or Atom representation'
                    )
     p.add_argument('--gating_func',type=str,choices=['Softmax','Sigmoid','Identity'],default='Sigmoid',help='Gating Activation Function'
                    )
